@@ -10,3 +10,5 @@ categories: test
 
 
 This is the first post of the ecstatic labs new blog platform using octopress.
+
+This is the first test update of a post.
