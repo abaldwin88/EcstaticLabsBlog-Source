@@ -4,28 +4,29 @@ The ecstatic labs platofrm is powered by Octopress 3.0.
 
 Note: Octopress 3.0 is in development at https://github.com/octopress/octopress
 
+## Posts
+
+Current posts can be edited in source/_posts
+
 ## Add a new post
 
-Make sure you are on the source branch.  The Github setup for octopress uses the source branch for 
+    rake new_post
 
-    bundle exec rake new_post
+You will find your new post in source/_posts
 
-You can find your new post in source/_posts
+## Serve Locally
 
-## View Locally
+    rake preview
 
-To view your changes locally...
-
-    bundle exec rake preview
+Then browse to http://localhost:4000/EcstaticLabsBlog
       
 ## Live Deploy
 
 To push changes into the live blog...
 
-    bundle exec rake deploy
+    rake deploy
     
-This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. 
-Github will serve up the master branch for site visitors automatically. 
-    
+This will push changes into the gh-pages on the EcstaticLabsBlog and site vistors will see the changes immediately.
+Don't forget to push your changes into the source repo using `git push origin`.
 
     
