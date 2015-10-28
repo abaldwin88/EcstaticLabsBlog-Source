@@ -22,8 +22,15 @@ Then browse to http://localhost:4000/EcstaticLabsBlog
       
 ## Live Deploy
 
-To push changes into the live blog...
+The first time you pull down this repo you will need to run this setup...
 
+    rake setup_github_pages
+    
+When prompted paste in the link to the gh-pages repo.
+
+Finally to push changes into the live blog...
+
+    rake generate
     rake deploy
     
 This will push changes into the gh-pages on the EcstaticLabsBlog and site vistors will see the changes immediately.
